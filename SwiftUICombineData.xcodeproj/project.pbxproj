@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		4A0C86EA27BCC97B0035A095 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86E927BCC97B0035A095 /* TrackableScrollView.swift */; };
 		4A0C86EB27BCC97B0035A095 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86E927BCC97B0035A095 /* TrackableScrollView.swift */; };
+		4A0C86ED27BCCDC10035A095 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86EC27BCCDC10035A095 /* MenuRow.swift */; };
+		4A0C86EE27BCCDC10035A095 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86EC27BCCDC10035A095 /* MenuRow.swift */; };
+		4A0C86F027BCCEBA0035A095 /* GradientIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86EF27BCCEBA0035A095 /* GradientIcon.swift */; };
+		4A0C86F127BCCEBA0035A095 /* GradientIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86EF27BCCEBA0035A095 /* GradientIcon.swift */; };
+		4A0C86F327BCD4F10035A095 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F227BCD4F10035A095 /* FAQView.swift */; };
+		4A0C86F427BCD4F10035A095 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F227BCD4F10035A095 /* FAQView.swift */; };
+		4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F527BCD5000035A095 /* PackagesView.swift */; };
+		4A0C86F727BCD5000035A095 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F527BCD5000035A095 /* PackagesView.swift */; };
 		4ADE561627BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */; };
 		4ADE561727BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */; };
 		4ADE561827BA01D2001AD752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560727BA01D2001AD752 /* ContentView.swift */; };
@@ -21,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		4A0C86E927BCC97B0035A095 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		4A0C86EC27BCCDC10035A095 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		4A0C86EF27BCCEBA0035A095 /* GradientIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
+		4A0C86F227BCD4F10035A095 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		4A0C86F527BCD5000035A095 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
 		4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineDataApp.swift; sourceTree = "<group>"; };
 		4ADE560727BA01D2001AD752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4ADE560827BA01D2001AD752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +61,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0C86F827BCD5030035A095 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C86F227BCD4F10035A095 /* FAQView.swift */,
+				4A0C86F527BCD5000035A095 /* PackagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A0C86F927BCD50A0035A095 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C86EC27BCCDC10035A095 /* MenuRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		4A0C86FA27BCD5120035A095 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C86EF27BCCEBA0035A095 /* GradientIcon.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4A0C86FB27BCD51C0035A095 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C86E927BCC97B0035A095 /* TrackableScrollView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4A0C86FC27BCD52E0035A095 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C86FA27BCD5120035A095 /* Other */,
+				4A0C86F927BCD50A0035A095 /* Rows */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		4ADE560027BA01D1001AD752 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +117,10 @@
 			children = (
 				4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */,
 				4ADE560727BA01D2001AD752 /* ContentView.swift */,
-				4A0C86E927BCC97B0035A095 /* TrackableScrollView.swift */,
+				4A0C86FB27BCD51C0035A095 /* Utils */,
 				4ADE562427BA0271001AD752 /* Graphics */,
+				4A0C86FC27BCD52E0035A095 /* Components */,
+				4A0C86F827BCD5030035A095 /* Views */,
 				4ADE560827BA01D2001AD752 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -197,8 +253,12 @@
 				4ADE561827BA01D2001AD752 /* ContentView.swift in Sources */,
 				4A0C86EA27BCC97B0035A095 /* TrackableScrollView.swift in Sources */,
 				4ADE562727BA027C001AD752 /* AccountBackground.swift in Sources */,
+				4A0C86F327BCD4F10035A095 /* FAQView.swift in Sources */,
+				4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */,
+				4A0C86F027BCCEBA0035A095 /* GradientIcon.swift in Sources */,
 				4ADE561627BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */,
 				4ADE562827BA027C001AD752 /* VisualEffectBlur.swift in Sources */,
+				4A0C86ED27BCCDC10035A095 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0C86F127BCCEBA0035A095 /* GradientIcon.swift in Sources */,
+				4A0C86F427BCD4F10035A095 /* FAQView.swift in Sources */,
 				4A0C86EB27BCC97B0035A095 /* TrackableScrollView.swift in Sources */,
+				4A0C86EE27BCCDC10035A095 /* MenuRow.swift in Sources */,
 				4ADE561927BA01D2001AD752 /* ContentView.swift in Sources */,
 				4ADE561727BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */,
+				4A0C86F727BCD5000035A095 /* PackagesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
