@@ -7,7 +7,12 @@
 
 import SwiftUI
 
+extension Color {
+    static let themeAccentColor = Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1))
+}
+
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @State private var contentOffset = CGFloat(0)
     
     var body: some View {
@@ -32,6 +37,7 @@ struct ContentView: View {
             .navigationBarHidden(true)
         }
         .navigationViewStyle(.stack)
+        .accentColor(colorScheme == .dark ? .white : Color.themeAccentColor)
     }
     
     var content: some View {
