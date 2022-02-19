@@ -31,6 +31,8 @@
 		4AE7458D27C0D0AC00B2B15E /* faqData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AE7458C27C0D0AC00B2B15E /* faqData.json */; };
 		4AE7458F27C0D15200B2B15E /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7458E27C0D15200B2B15E /* ModelData.swift */; };
 		4AE7459127C0D31400B2B15E /* FAQRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7459027C0D31400B2B15E /* FAQRow.swift */; };
+		4AE7459427C0D8EE00B2B15E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7459327C0D8EE00B2B15E /* PrimaryButton.swift */; };
+		4AE7459627C0D9C300B2B15E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7459527C0D9C300B2B15E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		4AE7458C27C0D0AC00B2B15E /* faqData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faqData.json; sourceTree = "<group>"; };
 		4AE7458E27C0D15200B2B15E /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		4AE7459027C0D31400B2B15E /* FAQRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRow.swift; sourceTree = "<group>"; };
+		4AE7459327C0D8EE00B2B15E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		4AE7459527C0D9C300B2B15E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				4A0C86E927BCC97B0035A095 /* TrackableScrollView.swift */,
 				4AE7458E27C0D15200B2B15E /* ModelData.swift */,
+				4AE7459527C0D9C300B2B15E /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 		4A0C86FC27BCD52E0035A095 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4AE7459227C0D8DA00B2B15E /* Buttons */,
 				4A0C86FA27BCD5120035A095 /* Other */,
 				4A0C86F927BCD50A0035A095 /* Rows */,
 			);
@@ -184,6 +190,14 @@
 				4AE7458C27C0D0AC00B2B15E /* faqData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AE7459227C0D8DA00B2B15E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4AE7459327C0D8EE00B2B15E /* PrimaryButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +310,9 @@
 				4A0C86F027BCCEBA0035A095 /* GradientIcon.swift in Sources */,
 				4AE7458627C0C6E900B2B15E /* Package.swift in Sources */,
 				4AE7458A27C0D05500B2B15E /* FAQ.swift in Sources */,
+				4AE7459627C0D9C300B2B15E /* Extensions.swift in Sources */,
 				4ADE561627BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */,
+				4AE7459427C0D8EE00B2B15E /* PrimaryButton.swift in Sources */,
 				4ADE562827BA027C001AD752 /* VisualEffectBlur.swift in Sources */,
 				4A0C86ED27BCCDC10035A095 /* MenuRow.swift in Sources */,
 			);
