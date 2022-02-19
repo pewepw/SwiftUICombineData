@@ -17,6 +17,7 @@
 		4A0C86F427BCD4F10035A095 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F227BCD4F10035A095 /* FAQView.swift */; };
 		4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F527BCD5000035A095 /* PackagesView.swift */; };
 		4A0C86F727BCD5000035A095 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F527BCD5000035A095 /* PackagesView.swift */; };
+		4A63CFE127C101EB00B8EDB5 /* CertificateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CFE027C101EB00B8EDB5 /* CertificateCard.swift */; };
 		4ADE561627BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */; };
 		4ADE561727BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */; };
 		4ADE561827BA01D2001AD752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560727BA01D2001AD752 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 		4AE7459D27C0EA1000B2B15E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE7459C27C0EA1000B2B15E /* FirebaseFirestore */; };
 		4AE7459F27C0EFD100B2B15E /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7459E27C0EFD100B2B15E /* Certificate.swift */; };
 		4AE745A227C0F1C600B2B15E /* CertificateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE745A127C0F1C600B2B15E /* CertificateViewModel.swift */; };
+		4AE745AF27C1013C00B2B15E /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE745AE27C1013C00B2B15E /* CertificatesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		4A0C86EF27BCCEBA0035A095 /* GradientIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
 		4A0C86F227BCD4F10035A095 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		4A0C86F527BCD5000035A095 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
+		4A63CFE027C101EB00B8EDB5 /* CertificateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateCard.swift; sourceTree = "<group>"; };
 		4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineDataApp.swift; sourceTree = "<group>"; };
 		4ADE560727BA01D2001AD752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4ADE560827BA01D2001AD752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		4AE7459927C0E79B00B2B15E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4AE7459E27C0EFD100B2B15E /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
 		4AE745A127C0F1C600B2B15E /* CertificateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewModel.swift; sourceTree = "<group>"; };
+		4AE745AE27C1013C00B2B15E /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			children = (
 				4A0C86F227BCD4F10035A095 /* FAQView.swift */,
 				4A0C86F527BCD5000035A095 /* PackagesView.swift */,
+				4AE745AE27C1013C00B2B15E /* CertificatesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,11 +133,20 @@
 		4A0C86FC27BCD52E0035A095 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4A63CFDF27C101DF00B8EDB5 /* Cards */,
 				4AE7459227C0D8DA00B2B15E /* Buttons */,
 				4A0C86FA27BCD5120035A095 /* Other */,
 				4A0C86F927BCD50A0035A095 /* Rows */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4A63CFDF27C101DF00B8EDB5 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				4A63CFE027C101EB00B8EDB5 /* CertificateCard.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		4ADE560027BA01D1001AD752 = {
@@ -339,6 +353,7 @@
 				4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */,
 				4A0C86F027BCCEBA0035A095 /* GradientIcon.swift in Sources */,
 				4AE745A227C0F1C600B2B15E /* CertificateViewModel.swift in Sources */,
+				4A63CFE127C101EB00B8EDB5 /* CertificateCard.swift in Sources */,
 				4AE7459827C0DF2A00B2B15E /* ProfileRow.swift in Sources */,
 				4AE7458627C0C6E900B2B15E /* Package.swift in Sources */,
 				4AE7458A27C0D05500B2B15E /* FAQ.swift in Sources */,
@@ -346,6 +361,7 @@
 				4ADE561627BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */,
 				4AE7459427C0D8EE00B2B15E /* PrimaryButton.swift in Sources */,
 				4ADE562827BA027C001AD752 /* VisualEffectBlur.swift in Sources */,
+				4AE745AF27C1013C00B2B15E /* CertificatesView.swift in Sources */,
 				4A0C86ED27BCCDC10035A095 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
