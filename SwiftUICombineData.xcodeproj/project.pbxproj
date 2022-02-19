@@ -36,6 +36,8 @@
 		4AE7459827C0DF2A00B2B15E /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7459727C0DF2A00B2B15E /* ProfileRow.swift */; };
 		4AE7459A27C0E79B00B2B15E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AE7459927C0E79B00B2B15E /* GoogleService-Info.plist */; };
 		4AE7459D27C0EA1000B2B15E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE7459C27C0EA1000B2B15E /* FirebaseFirestore */; };
+		4AE7459F27C0EFD100B2B15E /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7459E27C0EFD100B2B15E /* Certificate.swift */; };
+		4AE745A227C0F1C600B2B15E /* CertificateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE745A127C0F1C600B2B15E /* CertificateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		4AE7459527C0D9C300B2B15E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4AE7459727C0DF2A00B2B15E /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		4AE7459927C0E79B00B2B15E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4AE7459E27C0EFD100B2B15E /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
+		4AE745A127C0F1C600B2B15E /* CertificateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			children = (
 				4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */,
 				4ADE560727BA01D2001AD752 /* ContentView.swift */,
+				4AE745A027C0F1B600B2B15E /* ViewModel */,
 				4AE7458427C0C6D800B2B15E /* Model */,
 				4AE7458B27C0D09500B2B15E /* Resources */,
 				4A0C86FB27BCD51C0035A095 /* Utils */,
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE7458527C0C6E900B2B15E /* Package.swift */,
+				4AE7459E27C0EFD100B2B15E /* Certificate.swift */,
 				4AE7458927C0D05500B2B15E /* FAQ.swift */,
 			);
 			path = Model;
@@ -206,6 +212,14 @@
 				4AE7459327C0D8EE00B2B15E /* PrimaryButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4AE745A027C0F1B600B2B15E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AE745A127C0F1C600B2B15E /* CertificateViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,12 +331,14 @@
 				4ADE561827BA01D2001AD752 /* ContentView.swift in Sources */,
 				4AE7459127C0D31400B2B15E /* FAQRow.swift in Sources */,
 				4A0C86EA27BCC97B0035A095 /* TrackableScrollView.swift in Sources */,
+				4AE7459F27C0EFD100B2B15E /* Certificate.swift in Sources */,
 				4ADE562727BA027C001AD752 /* AccountBackground.swift in Sources */,
 				4AE7458F27C0D15200B2B15E /* ModelData.swift in Sources */,
 				4AE7458827C0C7BF00B2B15E /* PackageRow.swift in Sources */,
 				4A0C86F327BCD4F10035A095 /* FAQView.swift in Sources */,
 				4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */,
 				4A0C86F027BCCEBA0035A095 /* GradientIcon.swift in Sources */,
+				4AE745A227C0F1C600B2B15E /* CertificateViewModel.swift in Sources */,
 				4AE7459827C0DF2A00B2B15E /* ProfileRow.swift in Sources */,
 				4AE7458627C0C6E900B2B15E /* Package.swift in Sources */,
 				4AE7458A27C0D05500B2B15E /* FAQ.swift in Sources */,
