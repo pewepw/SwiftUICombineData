@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CertificateCard: View {
-    var certificate: Certificate
+    @EnvironmentObject var certificateVM: CertificateViewModel
+    @Binding var selection: Int
     
     var body: some View {
         ZStack {
@@ -16,7 +17,11 @@ struct CertificateCard: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
             
-            content
+            if certificateVM.certificates.count > 0 {
+                content
+            } else {
+                Text("No certificate")
+            }
         }
         .frame(maxWidth: 754, maxHeight: 465)
         .background(
@@ -35,7 +40,7 @@ struct CertificateCard: View {
     
     var content: some View {
         VStack(spacing: 20) {
-            Image(certificate.logo)
+            Image(certificateVM.certificates[selection].logo)
                 .resizable()
                 .frame(width: 28, height: 28)
                 .padding(8)
@@ -60,7 +65,7 @@ struct CertificateCard: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
-            Text("Successfully completed the online course \(certificate.course) on \(certificate.date)")
+            Text("Successfully completed the online course \(certificateVM.certificates[selection].course) on \(certificateVM.certificates[selection].date)")
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white.opacity(0.7))
@@ -82,21 +87,21 @@ struct CertificateCard: View {
     var instructorRow: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Instructor")
-            Text(certificate.instructor)
+            Text(certificateVM.certificates[selection].instructor)
         }
     }
     
     var certificateDataRow: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Certificate no: DC-\(certificate.id)")
-            Text("Certificate url: http://www.\(certificate.id)")
+            Text("Certificate no: DC-\(certificateVM.certificates[selection].id)")
+            Text("Certificate url: http://www.\(certificateVM.certificates[selection].id)")
         }
     }
 }
 
 struct CertificateCard_Previews: PreviewProvider {
     static var previews: some View {
-        let certificate = Certificate(id: "123456", course: "SwiftUI Combine and Data", date: "June 2nd 2021", logo: "Logo SwiftUI", instructor: "Jon Snow")
-        CertificateCard(certificate: certificate)
+        CertificateCard(selection: Binding.constant(0))
+            .environmentObject(CertificateViewModel())
     }
 }
