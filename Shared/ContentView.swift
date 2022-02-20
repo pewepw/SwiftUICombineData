@@ -12,33 +12,38 @@ extension Color {
 }
 
 struct ContentView: View {
-    @Environment(\.colorScheme) var colorScheme
-    @State private var contentOffset = CGFloat(0)
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @AppStorage("isLiteMode") var isLiteMode: Bool = false
+    
     @State private var showCertificates: Bool = false
+    @State private var contentOffset = CGFloat(0)
     
     var body: some View {
         NavigationView {
             ZStack(alignment: .top) {
-                TrackableScrollView { offset in
+                TrackableScrollView(offsetChanged: { offsetPoint in
                     withAnimation {
-                        contentOffset = offset.y
+                        contentOffset = offsetPoint.y
                     }
-                } content: {
+                }) {
                     content
                 }
                 
                 VisualEffectBlur(blurStyle: .systemMaterial)
-                    .opacity(contentOffset < -16 ? 1: 0)
+                    .opacity(contentOffset < -16 ? 1 : 0)
                     //.animation(.easeIn)
                     .ignoresSafeArea()
                     .frame(height: 0)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .frame(maxHeight: .infinity, alignment: .top)
             .background(AccountBackground())
             .navigationBarHidden(true)
+            .sheet(isPresented: $showCertificates, content: {
+                CertificatesView()
+            })
         }
-        .navigationViewStyle(.stack)
-        .accentColor(colorScheme == .dark ? .white : Color.themeAccentColor)
+        .navigationViewStyle(StackNavigationViewStyle())
+        .accentColor(colorScheme == .dark ? .white : Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
     }
     
     var content: some View {
@@ -49,39 +54,35 @@ struct ContentView: View {
                 }
             
             VStack {
-                NotificationRow()
-                Divider()
+                NotificationsRow()
+                divider
                 LiteModeRow()
             }
             .blurBackground()
             .padding(.top, 20)
             
             VStack {
-                NavigationLink {
-                    FAQView()
-                } label: {
+                NavigationLink(destination: FAQView()) {
                     MenuRow()
                 }
                 
                 divider
                 
-                NavigationLink {
-                    PackagesView()
-                } label: {
+                NavigationLink(destination: PackagesView()) {
                     MenuRow(title: "SwiftUI Packages", leftIcon: "square.stack.3d.up.fill")
                 }
                 
                 divider
                 
-                Link(destination: URL(string: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley")!) {
+                Link(destination: URL(string: "https://www.youtube.com/channel/UCTIhfOopxukTIRkbXJ3kN-g")!, label: {
                     MenuRow(title: "YouTube Channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
-                }
+                })
             }
             .blurBackground()
             .padding(.top, 20)
             
-            Text("Version 1.0")
-                .foregroundColor(Color.white)
+            Text("Version 1.00")
+                .foregroundColor(Color.white.opacity(0.7))
                 .padding(.top, 20)
                 .padding(.horizontal, 20)
                 .padding(.bottom, 10)
@@ -91,13 +92,10 @@ struct ContentView: View {
         .padding(.top, 20)
         .padding(.horizontal, 20)
         .padding(.bottom, 10)
-        .sheet(isPresented: $showCertificates) {
-            CertificatesView()
-        }
     }
     
     var divider: some View {
-        Divider().background(Color.white.blendMode(.overlay))
+        Divider().background(Color.white).blendMode(.overlay)
     }
 }
 

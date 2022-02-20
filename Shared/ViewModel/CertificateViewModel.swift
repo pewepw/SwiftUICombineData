@@ -7,6 +7,7 @@
 
 import Foundation
 import Firebase
+import SwiftUI
 
 final class CertificateViewModel: ObservableObject {
     @Published var certificates: [Certificate] = []
