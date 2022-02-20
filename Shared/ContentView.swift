@@ -47,6 +47,15 @@ struct ContentView: View {
                 .onTapGesture {
                     showCertificates.toggle()
                 }
+            
+            VStack {
+                NotificationRow()
+                Divider()
+                LiteModeRow()
+            }
+            .blurBackground()
+            .padding(.top, 20)
+            
             VStack {
                 NavigationLink {
                     FAQView()

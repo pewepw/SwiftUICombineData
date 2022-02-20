@@ -17,6 +17,8 @@
 		4A0C86F427BCD4F10035A095 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F227BCD4F10035A095 /* FAQView.swift */; };
 		4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F527BCD5000035A095 /* PackagesView.swift */; };
 		4A0C86F727BCD5000035A095 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C86F527BCD5000035A095 /* PackagesView.swift */; };
+		4A2242BF27C263BF000E311F /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2242BE27C263BF000E311F /* NotificationRow.swift */; };
+		4A2242C127C264F2000E311F /* LiteModeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2242C027C264F2000E311F /* LiteModeRow.swift */; };
 		4A63CFE127C101EB00B8EDB5 /* CertificateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CFE027C101EB00B8EDB5 /* CertificateCard.swift */; };
 		4ADE561627BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */; };
 		4ADE561727BA01D2001AD752 /* SwiftUICombineDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */; };
@@ -48,6 +50,8 @@
 		4A0C86EF27BCCEBA0035A095 /* GradientIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
 		4A0C86F227BCD4F10035A095 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		4A0C86F527BCD5000035A095 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
+		4A2242BE27C263BF000E311F /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
+		4A2242C027C264F2000E311F /* LiteModeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteModeRow.swift; sourceTree = "<group>"; };
 		4A63CFE027C101EB00B8EDB5 /* CertificateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateCard.swift; sourceTree = "<group>"; };
 		4ADE560627BA01D2001AD752 /* SwiftUICombineDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineDataApp.swift; sourceTree = "<group>"; };
 		4ADE560727BA01D2001AD752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				4AE7458727C0C7BF00B2B15E /* PackageRow.swift */,
 				4AE7459027C0D31400B2B15E /* FAQRow.swift */,
 				4AE7459727C0DF2A00B2B15E /* ProfileRow.swift */,
+				4A2242BE27C263BF000E311F /* NotificationRow.swift */,
+				4A2242C027C264F2000E311F /* LiteModeRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ADE561827BA01D2001AD752 /* ContentView.swift in Sources */,
+				4A2242BF27C263BF000E311F /* NotificationRow.swift in Sources */,
 				4AE7459127C0D31400B2B15E /* FAQRow.swift in Sources */,
 				4A0C86EA27BCC97B0035A095 /* TrackableScrollView.swift in Sources */,
 				4AE7459F27C0EFD100B2B15E /* Certificate.swift in Sources */,
@@ -351,6 +358,7 @@
 				4AE7458827C0C7BF00B2B15E /* PackageRow.swift in Sources */,
 				4A0C86F327BCD4F10035A095 /* FAQView.swift in Sources */,
 				4A0C86F627BCD5000035A095 /* PackagesView.swift in Sources */,
+				4A2242C127C264F2000E311F /* LiteModeRow.swift in Sources */,
 				4A0C86F027BCCEBA0035A095 /* GradientIcon.swift in Sources */,
 				4AE745A227C0F1C600B2B15E /* CertificateViewModel.swift in Sources */,
 				4A63CFE127C101EB00B8EDB5 /* CertificateCard.swift in Sources */,
